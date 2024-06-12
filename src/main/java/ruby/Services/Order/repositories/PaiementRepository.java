@@ -1,16 +1,15 @@
-package ruby.Services.Paiement.repositories;
+package ruby.Services.Order.repositories;
 
 import java.util.List;
 
-import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
-import ruby.Services.Paiement.entities.*;
+import ruby.Services.Order.entities.*;
 
 @Repository
 public interface PaiementRepository extends CrudRepository<Paiement, Long> {
-	
+
 	List<Paiement> findByUser(User user);
 
 }

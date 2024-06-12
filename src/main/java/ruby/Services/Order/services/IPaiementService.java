@@ -1,8 +1,8 @@
-package ruby.Services.Paiement.services;
+package ruby.Services.Order.services;
 
 import java.util.List;
 
-import ruby.Services.Paiement.entities.*;
+import ruby.Services.Order.entities.*;
 
 public interface IPaiementService {
 
@@ -14,6 +14,7 @@ public interface IPaiementService {
 
     Paiement addPaiement(Paiement pa, Long id);
 
-    List<panierProduit> detailPanier(Long paiement_id);
+    List<panierProduit> detailPanier(Long Paiement_id);
 
 }
+

@@ -1,4 +1,4 @@
-package ruby.Services.Paiement.services;
+package ruby.Services.Order.services;
 
 import java.util.Date;
 import java.util.List;
@@ -6,25 +6,25 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import ruby.Services.Paiement.entities.*;
-import ruby.Services.Paiement.repositories.*;
+import ruby.Services.Order.entities.*;
+import ruby.Services.Order.repositories.*;
 
 
 @Service 
 public class PaiementServiceImpl implements IPaiementService{
-	
+
 	@Autowired
-	panierProduitRepository PanierProdRepo;
-	
+	PanierProduitRepository PanierProdRepo;
+
 	@Autowired
 	UserRepository UserRepo;
-	
+
 	@Autowired
 	PaiementRepository PaiRepo;
-	
+
 	@Autowired
-	StockRepository StockRepo;
-	
+	stockRepository StockRepo;
+
 	@Override
 	public List<Paiement> retrieveAllPaiement() {
 		// TODO Auto-generated method stub
@@ -53,21 +53,22 @@ public class PaiementServiceImpl implements IPaiementService{
 		// TODO Auto-generated method stub
 		return PaiRepo.findById(idPaiement).orElse(null);
 	}
-	
-	
+
+
 	@Override
 	public List<Paiement> retrievePaiementByUser(Long id) {
 		// TODO Auto-generated method stub
 		User u = UserRepo.findById(id).orElse(null);
 		return PaiRepo.findByUser(u);
 	}
-	
+
 	@Override
-	public List<panierProduit> detailPanier(Long paiement_id) {
-		Paiement p = PaiRepo.findById(paiement_id).get();
+	public List<panierProduit> detailPanier(Long Paiement_id) {
+		Paiement p = PaiRepo.findById(Paiement_id).get();
 		List<panierProduit> panier = p.getProduits();
 		return panier;
 	}
 
-	
+
+
 }

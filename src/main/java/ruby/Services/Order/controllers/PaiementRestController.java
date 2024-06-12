@@ -1,4 +1,4 @@
-package ruby.Services.Paiement.controllers;
+package ruby.Services.Order.controllers;
 
 import java.io.OutputStream;
 import java.util.List;
@@ -19,16 +19,15 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import ruby.Services.Paiement.entities.*;
-import ruby.Services.Paiement.services.*;
+import ruby.Services.Order.entities.*;
+import ruby.Services.Order.services.*;
 
 
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "http://localhost:4200")
 @RestController
 @RequestMapping("/paiement")
 public class PaiementRestController {
 
-    @Autowired
     IPaiementService paiementService;
 
     @Autowired
@@ -87,3 +86,5 @@ public class PaiementRestController {
 
 
 }
+
+
