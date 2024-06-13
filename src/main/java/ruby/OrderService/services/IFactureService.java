@@ -1,8 +1,8 @@
-package ruby.Services.Order.services;
+package ruby.OrderService.services;
 
 import java.util.List;
 
-import ruby.Services.Order.entities.*;
+import ruby.OrderService.entities.*;
 
 public interface IFactureService {
 

@@ -1,4 +1,4 @@
-package ruby.Services.Order.repositories;
+package ruby.OrderService.repositories;
 
 import java.util.Date;
 import java.util.List;
@@ -7,7 +7,7 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
-import ruby.Services.Order.entities.*;
+import ruby.OrderService.entities.*;
 
 @Repository
 public interface FactureRepository extends CrudRepository<Facture, Long> {

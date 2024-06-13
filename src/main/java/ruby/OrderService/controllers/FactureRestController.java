@@ -1,4 +1,4 @@
-package ruby.Services.Order.controllers;
+package ruby.OrderService.controllers;
 
 import java.io.ByteArrayInputStream;
 import java.util.List;
@@ -21,8 +21,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import ruby.Services.Order.entities.*;
-import ruby.Services.Order.services.*;
+import ruby.OrderService.entities.*;
+import ruby.OrderService.services.*;
 
 
 @CrossOrigin(origins = "http://localhost:4200")

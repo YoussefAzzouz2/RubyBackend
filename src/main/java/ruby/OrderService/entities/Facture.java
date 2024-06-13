@@ -1,4 +1,4 @@
-package ruby.Services.Order.entities;
+package ruby.OrderService.entities;
 
 import java.io.Serializable;
 import java.util.Date;
@@ -8,9 +8,6 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
-
-import com.fasterxml.jackson.annotation.JsonFormat;
-import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

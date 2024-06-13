@@ -1,4 +1,4 @@
-package ruby.Services.Order.services;
+package ruby.OrderService.services;
 
 import com.itextpdf.text.Document;
 import com.itextpdf.text.DocumentException;
@@ -11,11 +11,8 @@ import com.itextpdf.text.pdf.PdfPCell;
 import com.itextpdf.text.pdf.PdfPTable;
 import com.itextpdf.text.pdf.PdfWriter;
 
-import lombok.var;
 
-
-import ruby.Services.Order.controllers.FactureRestController;
-import ruby.Services.Order.entities.*;
+import ruby.OrderService.entities.*;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -24,7 +21,6 @@ import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.util.Date;
 import java.util.List;
-import ruby.Services.Order.services.*;
 
 public class GeneratePdfReport {
 

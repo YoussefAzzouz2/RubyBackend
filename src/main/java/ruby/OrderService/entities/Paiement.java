@@ -1,4 +1,4 @@
-package ruby.Services.Order.entities;
+package ruby.OrderService.entities;
 
 import java.io.Serializable;
 import java.util.Date;

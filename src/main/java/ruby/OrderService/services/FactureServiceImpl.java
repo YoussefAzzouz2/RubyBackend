@@ -1,4 +1,4 @@
-package ruby.Services.Order.services;
+package ruby.OrderService.services;
 
 import java.util.Date;
 import java.util.List;
@@ -6,9 +6,9 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import ruby.Services.Order.entities.Facture;
-import ruby.Services.Order.repositories.*;
-import ruby.Services.Order.entities.*;
+import ruby.OrderService.entities.Facture;
+import ruby.OrderService.repositories.*;
+import ruby.OrderService.entities.*;
 
 @Service
 public class FactureServiceImpl implements IFactureService{
